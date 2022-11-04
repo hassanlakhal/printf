@@ -6,11 +6,11 @@
 /*   By: hlakhal- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 02:31:52 by hlakhal-          #+#    #+#             */
-/*   Updated: 2022/11/04 02:31:57 by hlakhal-         ###   ########.fr       */
+/*   Updated: 2022/11/04 03:27:49 by hlakhal-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"printf.h"
+#include "printf.h"
 
 int	ft_putnbr_u(unsigned int nb)
 {

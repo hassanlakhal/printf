@@ -6,25 +6,25 @@
 /*   By: hlakhal- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 02:20:21 by hlakhal-          #+#    #+#             */
-/*   Updated: 2022/11/04 02:23:05 by hlakhal-         ###   ########.fr       */
+/*   Updated: 2022/11/04 03:28:05 by hlakhal-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"printf.h"
-int		ft_putstr(char *s)
+#include "printf.h"
+int	ft_putstr(char *s)
 {
 	int	i;
 
 	i = 0;
 	if (!s)
 	{
-		write(1,"(null)", 6);
-		return 6;
+		write(1, "(null)", 6);
+		return (6);
 	}
 	while (s && s[i] != '\0')
 	{
 		write(1, &s[i], 1);
 		i++;
 	}
-	return i;
+	return (i);
 }

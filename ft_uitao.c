@@ -6,12 +6,12 @@
 /*   By: hlakhal- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 01:31:46 by hlakhal-          #+#    #+#             */
-/*   Updated: 2022/11/04 02:32:32 by hlakhal-         ###   ########.fr       */
+/*   Updated: 2022/11/04 03:28:13 by hlakhal-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
-#include"libft.h"
 static int	number_chifr(unsigned long nb)
 {
 	int	len;
@@ -57,9 +57,9 @@ static char	*cpy(char *str, long int n, int len)
 
 char	*ft_uitoa(unsigned int n)
 {
-	char		*pt;
-	int			len;
-	unsigned long x;
+	char			*pt;
+	int				len;
+	unsigned long	x;
 
 	x = (long int)n;
 	len = number_chifr(x);
@@ -77,4 +77,3 @@ char	*ft_uitoa(unsigned int n)
 	}
 	return ((char *)pt);
 }
-
