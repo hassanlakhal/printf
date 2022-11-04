@@ -6,11 +6,11 @@
 /*   By: hlakhal- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 04:52:15 by hlakhal-          #+#    #+#             */
-/*   Updated: 2022/11/03 05:40:29 by hlakhal-         ###   ########.fr       */
+/*   Updated: 2022/11/04 05:53:45 by hlakhal-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(char c)
 {

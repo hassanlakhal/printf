@@ -6,11 +6,11 @@
 /*   By: hlakhal- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 17:19:48 by hlakhal-          #+#    #+#             */
-/*   Updated: 2022/11/03 06:15:41 by hlakhal-         ###   ########.fr       */
+/*   Updated: 2022/11/04 21:02:41 by hlakhal-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int nb)
 {

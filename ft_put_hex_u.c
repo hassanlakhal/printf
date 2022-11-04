@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_put_hex.c                                       :+:      :+:    :+:   */
+/*   ft_put_hex_u.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hlakhal- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/03 08:22:59 by hlakhal-          #+#    #+#             */
-/*   Updated: 2022/11/04 21:04:43 by hlakhal-         ###   ########.fr       */
+/*   Created: 2022/11/04 21:11:08 by hlakhal-          #+#    #+#             */
+/*   Updated: 2022/11/04 21:14:24 by hlakhal-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include"ft_printf.h"
+
 static int	count_hex(unsigned long n)
 {
 	int	i;
@@ -25,18 +26,12 @@ static int	count_hex(unsigned long n)
 	}
 	return (i);
 }
-int	ft_put_hex(long nb, char c)
+int	ft_put_hex_u(size_t nb, char c)
 {
 	int		len;
 	int		j;
-	unsigned long long i;
-	i = 0;
-	if(nb > LONG_MAX)
-		i = (unsigned int)nb;
-	else
-		i = nb;
 	len = 0;
-	len = count_hex(i);
+	len = count_hex(nb);
 	j = 0;
 	if (c == 'x')
 		j = 87;
@@ -44,17 +39,17 @@ int	ft_put_hex(long nb, char c)
 		j = 55;
 	if (nb >= 16)
 	{
-		ft_put_hex(i / 16, c);
-		ft_put_hex(i % 16, c);
+		ft_put_hex_u(nb / 16, c);
+		ft_put_hex_u(nb % 16, c);
 	}
-	if (i < 16)
+	if (nb < 16)
 	{
-		if (i >= 10)
+		if (nb >= 10)
 		{
-			ft_putchar(i + j);
+			ft_putchar(nb + j);
 		}
 		else
-			ft_putchar(i + 48);
+			ft_putchar(nb + 48);
 	}
 	return (len);
 }

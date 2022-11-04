@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_u.c                                      :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hlakhal- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 02:31:52 by hlakhal-          #+#    #+#             */
-/*   Updated: 2022/11/04 21:02:22 by hlakhal-         ###   ########.fr       */
+/*   Created: 2022/10/30 13:15:38 by hlakhal-          #+#    #+#             */
+/*   Updated: 2022/11/02 23:00:23 by hlakhal-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include"libft.h"
 
-int	ft_putnbr_u(unsigned int nb)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*tab;
-	int		len;
+	size_t			i;
+	unsigned char	*d;
 
-	tab = ft_uitoa(nb);
-	len = ft_putstr(tab);
-	free(tab);
-	return (len);
+	i = 0;
+	d = (unsigned char *)b;
+	while (i < len)
+	{
+		d[i++] = c;
+	}
+	return (d);
 }
