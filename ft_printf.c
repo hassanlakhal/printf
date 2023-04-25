@@ -26,7 +26,7 @@ static int	_print(const char *s, int i, va_list n)
 }
 
 /**
- * ft_printf - implementation of printf function which formats and prints output
+ * _printf - implementation of printf function which formats and prints output
  * @str: format string
  * @...: variable arguments list
  *
