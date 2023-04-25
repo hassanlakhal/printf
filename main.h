@@ -1,6 +1,6 @@
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#ifndef MAIN_H
+# define MAIN_H
 # include <limits.h>
 # include <stdlib.h>
 # include <unistd.h>
