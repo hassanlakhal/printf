@@ -10,5 +10,7 @@
 int		_putchar(char c);
 int		ft_putstr(char *s);
 int	_printf(const char *str, ...);
-
+void	*ft_memset(void *b, int c, size_t len);
+char	*ft_itoa(int n);
+int	ft_putnbr(int nb);
 #endif

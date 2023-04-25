@@ -19,6 +19,8 @@ static int	_print(const char *s, int i, va_list n)
 		return (_putchar(va_arg(n, int)));
 	else if (s[i + 1] == 's')
 		return (ft_putstr(va_arg(n, char *)));
+	else if (s[i + 1] == 'd' || s[i + 1] == 'i')
+		return (ft_putnbr(va_arg(n, int)));
 	else
 		return (_putchar(s[i + 1]));
 }
