@@ -40,11 +40,13 @@ int	_printf(const char *str, ...)
 	va_start(n, str);
 	i = 0;
 	ret = 0;
-	while (str[i])
+	while (str && str[i])
 	{
 		if (str[i] == '%')
 		{
 			ret += _print(str, i, n);
+			if (!str[i])
+				i--;
 			i++;
 		}
 		else
