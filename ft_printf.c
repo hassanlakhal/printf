@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * _print - helper function that prints the next argument based on format specifier
+ * _print - helper function that prints
+ * the next argument based on format specifier
  * @s: format string
  * @i: index of current character in format string
  * @n: variable arguments list

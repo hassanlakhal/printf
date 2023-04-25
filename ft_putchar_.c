@@ -1,5 +1,5 @@
 /**
- * _putchar - writes the character c to stdout
+ * ft_putchar - writes the character c to stdout
  * @c: the character to print
  *
  * Return: number of characters printed
