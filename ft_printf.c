@@ -13,13 +13,13 @@
 static int	_print(const char *s, int i, va_list n)
 {
 	if (s[i + 1] == '%')
-		return (ft_putchar(s[i + 1]));
+		return (_putchar(s[i + 1]));
 	else if (s[i + 1] == 'c')
-		return (ft_putchar(va_arg(n, int)));
+		return (_putchar(va_arg(n, int)));
 	else if (s[i + 1] == 's')
 		return (ft_putstr(va_arg(n, char *)));
 	else
-		return (ft_putchar(s[i + 1]));
+		return (_putchar(s[i + 1]));
 }
 
 /**

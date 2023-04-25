@@ -7,7 +7,8 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-int		ft_putchar(char c);
+int		_putchar(char c);
 int		ft_putstr(char *s);
+int	_printf(const char *str, ...);
 
 #endif
