@@ -4,6 +4,15 @@
 #include <stdio.h>
 #include <unistd.h>
 
+/**
+ * _print - helper function that prints the next argument based on format specifier
+ * @s: format string
+ * @i: index of current character in format string
+ * @n: variable arguments list
+ *
+ * Return: number of characters printed
+ */
+
 static int	_print(const char *s, int i, va_list n)
 {
 	if (s[i + 1] == '%')
@@ -16,7 +25,15 @@ static int	_print(const char *s, int i, va_list n)
 		return (ft_putchar(s[i + 1]));
 }
 
-int	ft_printf(const char *str, ...)
+/**
+ * ft_printf - implementation of printf function which formats and prints output
+ * @str: format string
+ * @...: variable arguments list
+ *
+ * Return: number of characters printed
+ */
+
+int	_printf(const char *str, ...)
 {
 	va_list	n;
 	int		i;
