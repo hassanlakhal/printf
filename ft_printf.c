@@ -45,8 +45,6 @@ int	_printf(const char *str, ...)
 		if (str[i] == '%')
 		{
 			ret += _print(str, i, n);
-			if (!str[i])
-				i--;
 			i++;
 		}
 		else
