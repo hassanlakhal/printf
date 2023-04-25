@@ -4,7 +4,7 @@
  *
  * Return: number of characters printed
  */
-#include "ft_printf.h"
+#include "main.h"
 
 int	ft_putchar(char c)
 {

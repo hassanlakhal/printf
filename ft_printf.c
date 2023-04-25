@@ -1,5 +1,5 @@
 
-#include "ft_printf.h"
+#include "main.h"
 
 /**
  * _print - helper function that prints the next argument based on format specifier

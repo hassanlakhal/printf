@@ -5,7 +5,7 @@
  *
  * Return: number of characters written to the output stream
  */
-#include "ft_printf.h"
+#include "main.h"
 
 int	ft_putstr(char *s)
 {
