@@ -1,8 +1,5 @@
 
 #include "ft_printf.h"
-#include <stdarg.h>
-#include <stdio.h>
-#include <unistd.h>
 
 /**
  * _print - helper function that prints the next argument based on format specifier
