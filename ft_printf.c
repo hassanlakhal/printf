@@ -41,6 +41,8 @@ int	_printf(const char *str, ...)
 	int		i;
 	int		ret;
 
+	if (!str)
+		return (-1);
 	va_start(n, str);
 	i = 0;
 	ret = 0;
@@ -50,7 +52,7 @@ int	_printf(const char *str, ...)
 		{
 			ret += _print(str, i, n);
 			if (ret == -1)
-				return -1;
+				return (-1);
 			i++;
 		}
 		else
