@@ -54,7 +54,7 @@ int	_printf(const char *str, ...)
 			i++;
 			if (!str[i])
 				i--;
-			if (ret == -1)
+			else if (ret == -1)
 				return (-1);
 
 		}
