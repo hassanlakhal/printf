@@ -56,7 +56,7 @@ int	_printf(const char *str, ...)
 				i--;
 			if (ret == -1)
 				return (-1);
-			
+
 		}
 		else
 			ret += _putchar(str[i]);

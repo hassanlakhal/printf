@@ -12,5 +12,5 @@ int main(void)
 
 	a = printf("Expected output:    %yd\n");
 	b = _printf("Current output:     %yd\n");
-	printf("%d  %d",a,b);
+	printf("%d  %d", a, b);
 }
