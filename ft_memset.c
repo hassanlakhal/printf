@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-int *ft_memset(void *b, int c, size_t len)
+void *ft_memset(void *b, int c, size_t len)
 {
 	size_t i;
 	unsigned char *d;

@@ -42,7 +42,7 @@ static char *cpy(char *str, long int n, int len)
 		j = n / 10;
 		if (j == 0)
 		{
-			ft_memset(pt + len - 1, n + '0', sizeof -(char));
+			ft_memset(pt + len - 1, n + '0', sizeof(char));
 			n = 0;
 			len--;
 		}
@@ -75,7 +75,7 @@ char *ft_itoa(int n)
 		return (NULL);
 	if (x < 0)
 	{
-		x * = -1;
+		x *= -1;
 		pt = (char *)cpy(pt, x, len);
 		pt[0] = '-';
 	}
