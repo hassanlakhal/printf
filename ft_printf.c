@@ -51,9 +51,12 @@ int	_printf(const char *str, ...)
 		if (str[i] == '%')
 		{
 			ret += _print(str, i, n);
+			i++;
+			if (!str[i])
+				i--;
 			if (ret == -1)
 				return (-1);
-			i++;
+			
 		}
 		else
 			ret += _putchar(str[i]);
